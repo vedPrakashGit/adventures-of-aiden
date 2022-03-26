@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+  <title>Adventure of Aiden - Shopping Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-xl main-nav">
+    <div class="container">
+      <div class="center-position">
+          <div class=navbar-brand>
+            <a href="index.html">
+              <img src="images/logo-navbar.png" alt="logo" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dual-nav">
+        <span class="fas fa-bars"></span>
+      </button>     
+      <div class="navbar-collapse collapse dual-nav" id="dual-nav">
+        <ul class="nav navbar-nav nav-1">
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="characters.html" id="charactersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Characters
+              </a>
+              <div class="dropdown-menu" aria-labelledby="charactersDropdown">
+                <a class="dropdown-item" href="#">Quiz</a>
+                <a class="dropdown-item" href="#">Animation</a>
+                <a class="dropdown-item" href="#">Game</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Educators
+              </a>
+              <div class="dropdown-menu" aria-labelledby="shopDropdown">
+                <a class="dropdown-item" href="ambassador.html">Ambassador Programs</a>
+                <a class="dropdown-item" href="lesson-plans.html">Lesson Plans</a>
+                <a class="dropdown-item" href="#">Subscription</a>
+                <a class="dropdown-item" href="#">Educators Forum</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="video.html">Video</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav nav-2">
+            <li class="nav-item">
+                <a class="nav-link mastercard-link" href="#"><img src="images/aiden-mastercard.png" alt="">  Aiden <span>MasterCard</span>
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link shop-cart-link" href="shopping-cart.html"><img src="images/shop-cart-icon.png" class="img-fluid" alt="Shopping Cart Icon"><label class="text-center"><span>2</span></label></a>
+            </li>
+            <li class="nav-item">
+                <button class="btn navbar-button text-uppercase">Join</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn navbar-button-outline text-uppercase">Sign in</button>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="search-bg">
+    <div class="container">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+  </div>
+
+  <section class="shop-cart-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+          <h1 class="text-uppercase">Cart</h1>
+          <div class="table-responsive">
+            <table class="table shop-cart-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Name item</th>
+                  <th>Color</th>
+                  <th>Size</th>
+                  <th class="text-right">Price</th>
+                  <th class="text-center qty-th">Quantity</th>
+                  <th class="text-left">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="shop-cart-img-td">
+                    <div class="shop-cart-img-box">
+                      <img src="images/shop-tshirt.png" class="img-fluid" alt="T-Shirt">
+                    </div>
+                  </td>
+                  <td class="shop-cart-product-name text-uppercase">T-Shirt</td>
+                  <td class="shop-cart-color"><span></span></td>
+                  <td class="shop-cart-size"><span>S</span></td>
+                  <td class="shop-cart-price text-right">$12.99</td>
+                  <td class="text-center">
+                      <button type="button" class="btn btn-number btn-up" data-type="plus" data-field="quant[1]"><i class="fa fa-chevron-up"></i></button>
+                      <button type="button" class="btn btn-number btn-down" disabled="disabled" data-type="minus" data-field="quant[1]"><i class="fa fa-chevron-down"></i></button>
+                      <input class="shop-cart-qty form-control input-number" type="text" name="quant[1]" value="1" min="1" max="100">
+                  </td>
+                  <td class="shop-cart-total text-left">$12.99</td>
+                </tr>
+                <tr>
+                  <td class="shop-cart-img-td">
+                    <div class="shop-cart-img-box">
+                      <img src="images/shop-bag.png" class="img-fluid" alt="Bag">
+                    </div>
+                  </td>
+                  <td class="shop-cart-product-name text-uppercase">Drawstring Bag</td>
+                  <td><span></span></td>
+                  <td><span></span></td>
+                  <td class="shop-cart-price text-right">$19.99</td>
+                  <td class="text-center">
+                      <button type="button" class="btn btn-number btn-up" data-type="plus" data-field="quant[2]"><i class="fa fa-chevron-up"></i></button>
+                      <button type="button" class="btn btn-number btn-down" disabled="disabled" data-type="minus" data-field="quant[2]"><i class="fa fa-chevron-down"></i></button>
+                      <input class="shop-cart-qty form-control input-number" type="text" name="quant[2]" value="1" min="1" max="100">
+                  </td>
+                  <td class="shop-cart-total text-left">$19.99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+          <div class="shop-cart-total-div">
+            <label class="total-price-label">Total <span class="total-price-value">$32.98</span></label>
+            <button class="btn shop-cart-cntn-btn mr-top-5 text-uppercase">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	
+
+  <footer>
+    <div class="footer-bg-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <img src="images/logo.png" alt="Logo of Adventures of Aiden" class="footer-logo img-fluid mr-top-45">
+            <div>
+              <ul class="social-icon">
+                <li>
+                  <a href="#">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="footer-heading text-uppercase">Useful links</h1>
+                <hr class="footer-hr">
+              </div>
+            </div>
+            <div class="row mr-top">
+              <div class="col-sm-6">
+                <ul>
+                  <li>
+                    <a href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a href="characters.html">Characters</a>
+                  </li>
+                  <li>
+                    <a href="shop.html">Shop</a>
+                  </li>
+                  <li>
+                    <a href="">Education</a>
+                  </li>
+                  <li>
+                    <a href="news.html">News</a>
+                  </li>
+                  <li>
+                    <a href="video.html">Video</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">terms & Conditions</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bg-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-8 text-center">
+            <p class="footer-para">Adventures of Aiden © 2020. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    var fieldName = $(this).attr('data-field');
+    var type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+        } else if(type == 'plus') {
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+        }
+    } else {
+        input.val(0);
+    }
+
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    var minValue =  parseInt($(this).attr('min'));
+    var maxValue =  parseInt($(this).attr('max'));
+    var valueCurrent = parseInt($(this).val());
+
+    var name = $(this).attr('name');    
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }  
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+});
+  </script>
+</body>
+</html>
