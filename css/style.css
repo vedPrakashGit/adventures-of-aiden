@@ -1078,8 +1078,8 @@ footer ul li:hover a {
 }
 .video-wrapper{
   position: relative;
-  padding-bottom: 10%;
-  padding-top: 10%;
+  padding-bottom: 35%;
+  padding-top: 35%;
 }
 .video-wrapper iframe{
   position: absolute;
